@@ -1,15 +1,16 @@
-# PokeMatch a simple DevContainer
+# PokeMatch: A Simple DevContainer Project
 
-## Information about the project
+## Project Overview
 
-- We create a simple web app with a connection to a MongoDB database
-- The frontend is written in HTML, CSS and JavaScript
-- The backend is also written in JavaScript with Node.js
-- On the web app you can play memory, and it saves the moves/time you needed to finish the game
-- There is a leaderboard where you can see the top 5 players
-- The leaderboard is ranked by the moves a player needed to finish the game
+- We are building a straightforward web     application that connects to a MongoDB database.
+- The frontend is coded in HTML, CSS, and JavaScript.
+- Similarly, the backend is implemented in JavaScript       using      Node.js.
+- Within the web app, users can play a memory game, and their   moves/time to finish the game are saved.
+- There's a leaderboard showcasing the top 5 players.
+- The leaderboard ranks players based on the number of moves required to complete the game.
 
-## DevContainer
+## DevContainer Setup
+
 
 <a href="https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/lorenzboss/pokematch.git">
   <img 
@@ -19,26 +20,26 @@
   >
 </a>
 
-### Start the project via button
+### Starting the Project via Button
 
-1. Make sure you have installed [Docker](https://www.docker.com/get-started) and [Visual Studio Code](https://code.visualstudio.com/download) with the [DevContainer](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
-2. Click on the button above (on [github](https://github.com/lorenzboss/pokematch))
+1. Ensure you have installed [Docker](https://www.docker.com/get-started) and [Visual Studio Code](https://code.visualstudio.com/download) with the [DevContainer](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
+2. Click on the button above (on [github](https://github.com/leandroaebi/pokematch))
 3. All dependencies, extensions and tools will be installed automatically
-4. Copy the `.env.sample` file and rename it to `.env`
-5. Run the project with `F5` or `Ctrl+F5` or `npm run dev`
+4. Duplicate the `.env.sample` file and rename it to `.env`
+5. Launch the project with `F5` or `Ctrl+F5` or `npm run dev`
 
-### Start the project manually
+### Starting the project manually
 
-1. Make sure you have installed [Docker](https://www.docker.com/get-started) and [Visual Studio Code](https://code.visualstudio.com/download) with the [DevContainer](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
+1. Ensure you've installed [Docker](https://www.docker.com/get-started) and [Visual Studio Code](https://code.visualstudio.com/download) with the [DevContainer](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
 2. Clone the repository in Visual Studio Code
 3. Reopen the project in a DevContainer
-4. All dependencies, extensions and tools will be installed automatically
+4. All necessary dependencies, extensions, and tools will be automatically installed.
 5. Copy the `.env.sample` file and rename it to `.env`
-6. Run the project with `F5` or `Ctrl+F5` or `npm run dev`
+6. You can Run the project with `F5` or `Ctrl+F5` or `npm run dev`
 
 ### Initialize sample data
 
-To add sample Data to the database, run the following command in the terminal (in the pokematch folder):
+To add sample data to the database, execute the following command in the terminal (within the pokematch folder):
 
 ```bash
 node sample-data.js
@@ -46,14 +47,14 @@ node sample-data.js
 
 ### Additional information
 
-1. The website will be running on port `4040`
-2. The database-tool mongo-express will be running on port `8081`
-3. The credentials for mongo-express are `admin` and `pass`
-4. The database is running on port `27017` (you don't need to access it directly)
+1. The website will run on port `4040`
+2. The database tool, mongo-express, will be accessible via port `8081`
+3. Credentials for mongo-express are `admin` and `pass`
+4. The database is running on port `27017` (direct access is unnecessary)
 
 ### Tools
 
-In the DevContainer, you can use the following tools and extensions:
+Within the DevContainer, you can utilize the following tools and extensions:
 
 - Mongo-express
 - ESLint
@@ -62,12 +63,12 @@ In the DevContainer, you can use the following tools and extensions:
 
 ## Production container
 
-### Start the project
+### Starting the project
 
-1. Make sure you have installed [Docker](https://www.docker.com/get-started)
+1. Confirm that you've installed [Docker](https://www.docker.com/get-started)
 2. Clone the repository
-3. Go to the repository folder and run the following commands:
-4. In the terminal, go to the pokematch folder and run the following commands:
+3. Navigate to the repository folder and execute the following commands:
+4. In the terminal, navigate to the pokematch folder and execute the following commands:
    ```bash
    docker build -t pokematch_production .
    ```
@@ -76,6 +77,15 @@ In the DevContainer, you can use the following tools and extensions:
    ```
 
 ### Additional information
+1. The project will operate on port `4040`
+2. As the database is not included in the production container, the leaderboard functionality will be disabled.
 
-1. The project will be running on port 4040
-2. Since the database is not included in the production container, the leaderboard will not work
+
+
+
+
+
+
+
+
+
